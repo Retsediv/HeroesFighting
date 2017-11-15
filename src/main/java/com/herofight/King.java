@@ -6,8 +6,6 @@ public class King extends Swordsman {
     private static final int MIN_POWER = 5;
     private static final int MAX_POWER = 15;
 
-    private KickBehaviour kickBehaviour = new Sword();
-
     public King() {
         super(MIN_HP, MAX_HP, MIN_POWER, MAX_POWER);
     }
