@@ -22,19 +22,19 @@ public class CharacterFactoryTest extends TestCase {
     }
 
     public void testFactoryCreation() throws Exception {
-        CharacterFactory characterFactory = new CharacterFactory(this.childs);
+        CharacterFactory characterFactory = new CharacterFactory();
 
         assertEquals(CharacterFactory.class, characterFactory.getClass());
     }
 
     public void testFactoryGettingTheCharacters() throws Exception {
-        CharacterFactory characterFactory = new CharacterFactory(this.childs);
+        CharacterFactory characterFactory = new CharacterFactory();
 
         assertEquals(characterFactory.getCharacters(), this.childs);
     }
 
     public void testCharacterCreation() throws Exception {
-        CharacterFactory characterFactory = new CharacterFactory(this.childs);
+        CharacterFactory characterFactory = new CharacterFactory();
 
         assertTrue(characterFactory.createCharacter() instanceof Character);
         assertTrue(this.childs.contains(characterFactory.createCharacter().getClass()));

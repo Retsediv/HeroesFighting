@@ -10,17 +10,17 @@ public class Elf extends Character {
     }
 
     @Override
-    void kick(Character c) {
+    public void kick(Character c) {
         if(c.power < this.power) {
             // kill him
-            c.hp = -1;
+            c.hp = 0;
 
-            System.out.println("com.herofight.Elf killed another character");
+            System.out.println("Elf killed another character");
         } else {
             // decrease power by 1
             c.decreasePower();
 
-            System.out.println("com.herofight.Elf decreased power of another character");
+            System.out.println("Elf decreased power of another character");
         }
     }
 }

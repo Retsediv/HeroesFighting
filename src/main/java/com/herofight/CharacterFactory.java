@@ -1,16 +1,22 @@
 package com.herofight;
 
+import org.reflections.Reflections;
+
+import java.util.Date;
 import java.util.Set;
 
 public class CharacterFactory {
 
     private Set<Class<? extends Character>> characters;
 
-    public CharacterFactory(Set<Class<? extends Character>> characters) {
-        this.characters = characters;
+    public CharacterFactory() {
+        this.characters = getCharacters();
     }
 
     public Set<Class<? extends Character>> getCharacters() {
+        String package_name = this.getClass().getPackage().getName();
+        Reflections reflections = new Reflections(package_name);
+        characters = reflections.getSubTypesOf(Character.class);
         return characters;
     }
 

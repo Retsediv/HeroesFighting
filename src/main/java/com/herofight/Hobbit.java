@@ -10,11 +10,11 @@ public class Hobbit extends Character {
     }
 
     @Override
-    void kick(Character c) {
+    public void kick(Character c) {
         toCry();
     }
 
-    void toCry() {
+    public void toCry() {
         System.out.println("Cry......!!!");
     }
 }

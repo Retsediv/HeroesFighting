@@ -11,12 +11,12 @@ public class King extends Swordsman {
     }
 
     @Override
-    void kick(Character c) {
+    public void kick(Character c) {
 //        if (this.hp > 10) {
 //            kickBehaviour = (c1, c2) -> c2.hp = 0;
 //        }
 
         kickBehaviour.kick(this, c);
-
+        System.out.format("%s kicked another character by %d points\n", this.getClass().getSimpleName(), this.power);
     }
 }
