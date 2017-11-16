@@ -13,6 +13,6 @@ public class Knight extends Swordsman {
     @Override
     public void kick(Character c) {
         kickBehaviour.kick(this, c);
-        System.out.format("%s kicked another character by %d points\n", this.getClass().getSimpleName(), this.power);
+        System.out.format("%s kicked another character by %d points%n", this.getClass().getSimpleName(), this.power);
     }
 }

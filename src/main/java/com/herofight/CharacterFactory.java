@@ -2,7 +2,6 @@ package com.herofight;
 
 import org.reflections.Reflections;
 
-import java.util.Date;
 import java.util.Set;
 
 public class CharacterFactory {
@@ -45,7 +44,7 @@ public class CharacterFactory {
             randomIndex--;
         }
 
-        if(hero != null){
+        if (hero != null) {
             return hero;
         } else {
             return this.createCharacter();

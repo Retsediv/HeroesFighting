@@ -16,8 +16,8 @@ public class GameManager {
         String c1_name = c1.getClass().getSimpleName();
         String c2_name = c2.getClass().getSimpleName();
 
-        System.out.printf("First warrior: %s with %d hp\n", c1_name, c1.hp);
-        System.out.printf("Second warrior: %s with %d hp\n\n", c2_name, c2.hp);
+        System.out.printf("First warrior: %s with %d hp%n", c1_name, c1.hp);
+        System.out.printf("Second warrior: %s with %d hp%n%n", c2_name, c2.hp);
 
 
         int rounds = 0;
@@ -33,13 +33,13 @@ public class GameManager {
 
             rounds++;
 
-            if(rounds > 100){
+            if (rounds > 100) {
                 draw = true;
                 break;
             }
         }
 
-        if(draw){
+        if (draw) {
             System.out.println("No one won");
         } else {
 

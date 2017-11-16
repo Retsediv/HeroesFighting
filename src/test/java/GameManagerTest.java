@@ -2,7 +2,7 @@ import com.herofight.CharacterFactory;
 import com.herofight.GameManager;
 import junit.framework.TestCase;
 
-public class GameManagerTest extends TestCase{
+public class GameManagerTest extends TestCase {
     @Override
     public void setUp() throws Exception {
         super.setUp();

@@ -11,7 +11,7 @@ public class Elf extends Character {
 
     @Override
     public void kick(Character c) {
-        if(c.power < this.power) {
+        if (c.power < this.power) {
             // kill him
             c.hp = 0;
 
